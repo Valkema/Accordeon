@@ -1,0 +1,9 @@
+:root {
+    --main-font: Arial, Helvetica, sans-serif;
+    --bg-clr: rgb(108, 189, 97);
+    --main-clr: rgb(255, 255, 255);
+    --secondary-clr: rgb(88, 86, 86);
+    --accent-btn-clr: rgb(255, 127, 80);
+    --items-main-clr: rgb(248, 245, 241);
+    --items-accent-clr: rgb(141, 230, 129);
+}

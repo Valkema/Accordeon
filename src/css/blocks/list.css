@@ -1,0 +1,77 @@
+
+.list {
+    width: 90%;
+}
+
+.list__wrapper {
+    list-style: none;
+}
+
+.list__item {
+    background-color: var(--items-main-clr);
+    margin: 0.75rem;
+    position: relative;
+}
+
+.list__item-title {
+    padding: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.list__item-title:hover {
+    background-color: var(--items-accent-clr);
+}
+
+.list__item-title::before {
+    content: "";
+    height: 5px;
+    width: 15px;
+    background-color: var(--secondary-clr);
+    position: absolute;
+    z-index: 50;
+    top: 45%;
+    left: 97%;
+    border-radius: 20%;
+}
+
+.list__item-title::after {
+    content: "";
+    height: 5px;
+    width: 15px;
+    background-color: var(--secondary-clr);
+    position: absolute;
+    z-index: 50;
+    top: 45%;
+    left: 97%;
+    border-radius: 20%;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+}
+
+.list__item-content {
+    height: 0px;
+    font-size: 0;
+    transition: all 0.5s ease;
+}
+
+
+.list__item_active > .list__item-title {
+    padding: 0.5rem;
+    border: 1px solid var(--main-clr);
+    background-color: var(--items-accent-clr);
+    cursor: pointer;
+    position: relative;
+}
+
+.list__item_active >.list__item-title::after {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.list__item_active > .list__item-content {
+    height: auto;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: all 0.5s ease;
+}
