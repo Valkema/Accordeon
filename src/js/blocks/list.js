@@ -1,4 +1,3 @@
-import {flag} from './switch.js';
 
 const listItem = document.querySelectorAll(".list__item");
 
@@ -26,6 +25,3 @@ function openMenu() {
         });
     });
 }
-
-
-export {openMenu};

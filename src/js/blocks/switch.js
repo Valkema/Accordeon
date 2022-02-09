@@ -10,6 +10,3 @@ function switchMode() {
         switchLabel.textContent = flag ? "Change interface type to seen single item" : "Change interface type to seen multiple items";
     });
 }
-
-export {switchMode};
-export {flag};
